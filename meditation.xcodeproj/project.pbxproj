@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD502A4829366AC500560EDE /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD502A4729366AC500560EDE /* MeditationView.swift */; };
+		BD502A4A293683EC00560EDE /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD502A49293683EC00560EDE /* PlayerView.swift */; };
+		BD502A4C29368E6700560EDE /* PlayBackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD502A4B29368E6700560EDE /* PlayBackControlButton.swift */; };
+		BD502A4E2936938B00560EDE /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD502A4D2936938B00560EDE /* MeditationViewModel.swift */; };
+		BD502A502936965900560EDE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD502A4F2936965900560EDE /* Extensions.swift */; };
+		BD502A5229369B7100560EDE /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD502A5129369B7100560EDE /* AudioManager.swift */; };
+		BD502A542936A23C00560EDE /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD502A532936A23C00560EDE /* meditation1.mp3 */; };
 		BD56CCDE29320EFC006457DF /* meditationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCDD29320EFC006457DF /* meditationApp.swift */; };
 		BD56CCE029320EFC006457DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCDF29320EFC006457DF /* ContentView.swift */; };
 		BD56CCE229320F01006457DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD56CCE129320F01006457DF /* Assets.xcassets */; };
 		BD56CCE629320F01006457DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD56CCE529320F01006457DF /* Preview Assets.xcassets */; };
-		BD56CCF029320F02006457DF /* meditationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCEF29320F02006457DF /* meditationTests.swift */; };
-		BD56CCFA29320F02006457DF /* meditationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCF929320F02006457DF /* meditationUITests.swift */; };
-		BD56CCFC29320F02006457DF /* meditationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD56CCFB29320F02006457DF /* meditationUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD502A4729366AC500560EDE /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		BD502A49293683EC00560EDE /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		BD502A4B29368E6700560EDE /* PlayBackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBackControlButton.swift; sourceTree = "<group>"; };
+		BD502A4D2936938B00560EDE /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
+		BD502A4F2936965900560EDE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BD502A5129369B7100560EDE /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		BD502A532936A23C00560EDE /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
+		BD502A552936A5D000560EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD56CCDA29320EFC006457DF /* meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meditation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD56CCDD29320EFC006457DF /* meditationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditationApp.swift; sourceTree = "<group>"; };
 		BD56CCDF29320EFC006457DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,10 +53,7 @@
 		BD56CCE329320F01006457DF /* meditation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = meditation.entitlements; sourceTree = "<group>"; };
 		BD56CCE529320F01006457DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD56CCEB29320F02006457DF /* meditationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meditationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD56CCEF29320F02006457DF /* meditationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditationTests.swift; sourceTree = "<group>"; };
 		BD56CCF529320F02006457DF /* meditationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meditationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD56CCF929320F02006457DF /* meditationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditationUITests.swift; sourceTree = "<group>"; };
-		BD56CCFB29320F02006457DF /* meditationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meditationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				BD56CCDC29320EFC006457DF /* meditation */,
-				BD56CCEE29320F02006457DF /* meditationTests */,
-				BD56CCF829320F02006457DF /* meditationUITests */,
 				BD56CCDB29320EFC006457DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,11 +102,19 @@
 		BD56CCDC29320EFC006457DF /* meditation */ = {
 			isa = PBXGroup;
 			children = (
+				BD502A552936A5D000560EDE /* Info.plist */,
 				BD56CCDD29320EFC006457DF /* meditationApp.swift */,
 				BD56CCDF29320EFC006457DF /* ContentView.swift */,
 				BD56CCE129320F01006457DF /* Assets.xcassets */,
+				BD502A532936A23C00560EDE /* meditation1.mp3 */,
 				BD56CCE329320F01006457DF /* meditation.entitlements */,
 				BD56CCE429320F01006457DF /* Preview Content */,
+				BD502A4729366AC500560EDE /* MeditationView.swift */,
+				BD502A49293683EC00560EDE /* PlayerView.swift */,
+				BD502A5129369B7100560EDE /* AudioManager.swift */,
+				BD502A4B29368E6700560EDE /* PlayBackControlButton.swift */,
+				BD502A4D2936938B00560EDE /* MeditationViewModel.swift */,
+				BD502A4F2936965900560EDE /* Extensions.swift */,
 			);
 			path = meditation;
 			sourceTree = "<group>";
@@ -110,23 +125,6 @@
 				BD56CCE529320F01006457DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		BD56CCEE29320F02006457DF /* meditationTests */ = {
-			isa = PBXGroup;
-			children = (
-				BD56CCEF29320F02006457DF /* meditationTests.swift */,
-			);
-			path = meditationTests;
-			sourceTree = "<group>";
-		};
-		BD56CCF829320F02006457DF /* meditationUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BD56CCF929320F02006457DF /* meditationUITests.swift */,
-				BD56CCFB29320F02006457DF /* meditationUITestsLaunchTests.swift */,
-			);
-			path = meditationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD502A542936A23C00560EDE /* meditation1.mp3 in Resources */,
 				BD56CCE629320F01006457DF /* Preview Assets.xcassets in Resources */,
 				BD56CCE229320F01006457DF /* Assets.xcassets in Resources */,
 			);
@@ -260,7 +259,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD56CCE029320EFC006457DF /* ContentView.swift in Sources */,
+				BD502A4829366AC500560EDE /* MeditationView.swift in Sources */,
+				BD502A5229369B7100560EDE /* AudioManager.swift in Sources */,
 				BD56CCDE29320EFC006457DF /* meditationApp.swift in Sources */,
+				BD502A4A293683EC00560EDE /* PlayerView.swift in Sources */,
+				BD502A4E2936938B00560EDE /* MeditationViewModel.swift in Sources */,
+				BD502A4C29368E6700560EDE /* PlayBackControlButton.swift in Sources */,
+				BD502A502936965900560EDE /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD56CCF029320F02006457DF /* meditationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD56CCFC29320F02006457DF /* meditationUITestsLaunchTests.swift in Sources */,
-				BD56CCFA29320F02006457DF /* meditationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +419,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"meditation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = meditation/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,6 +456,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"meditation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = meditation/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

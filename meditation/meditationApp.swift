@@ -1,17 +1,22 @@
-//
-//  meditationApp.swift
-//  meditation
-//
-//  Created by Softcent on 26/11/22.
-//
-
 import SwiftUI
 
 @main
 struct meditationApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	init() {
+#if DEBUG
+		var injectionBundlePath = "/Applications/InjectionIII.app/Contents/Resources"
+#if targetEnvironment(macCatalyst)
+		injectionBundlePath = "\(injectionBundlePath)/macOSInjection.bundle"
+#elseif os(iOS)
+		injectionBundlePath = "\(injectionBundlePath)/iOSInjection.bundle"
+#endif
+		Bundle(path: injectionBundlePath)?.load()
+#endif
+	}
+	
+	var body: some Scene {
+		WindowGroup {
+			MeditationView(meditationVM: MeditationViewModel(meditation: Meditation.data))
+		}
+	}
 }
