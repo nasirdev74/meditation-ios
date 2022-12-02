@@ -28,6 +28,7 @@ struct MeditationView: View {
 					
 					// MARK: Title
 					Text(meditationVM.meditation.title)
+//						Text("The fucking title")
 						.font(.title)
 					// MARK: Play Button
 					Button(action:  {
@@ -61,13 +62,6 @@ struct MeditationView: View {
 class MeditationViewP: PreviewProvider {
 	static let meditationVM = MeditationViewModel(meditation: Meditation.data)
 	static var previews: some View {
-		MeditationView(meditationVM: meditationVM)
+			MeditationView(meditationVM: meditationVM).environmentObject(AudioManager())
 	}
-#if DEBUG
-	@objc class func injected() {
-		let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-		windowScene?.windows.first?.rootViewController =
-		UIHostingController(rootView: MeditationView(meditationVM: meditationVM))
-	}
-#endif
 }
